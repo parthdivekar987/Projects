@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hello World</string>
+    <string name="table_layout">Table Layout</string>
+    <string name="Grid_Layout">GridLayout\n</string>
+    <string name="grid_layout">GridLayout</string>
+    <string name="spotify">Spotify</string>
+    <string name="what_you_want_to_listen">What you want to listen</string>
+    <string name="recently_played">Recently Played\n</string>
+    <string name="logo">logo\n</string>
+    <string name="sign_in">sign-in</string>
+</resources>
