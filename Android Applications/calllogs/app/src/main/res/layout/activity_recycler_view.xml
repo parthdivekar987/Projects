@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Recycler_view">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:orientation="vertical"
+        android:background="@drawable/img">
+
+        <TextView
+            android:id="@+id/calltext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Call_logs"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="150dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logslistview"/>
+
+
+</LinearLayout>
