@@ -1,0 +1,43 @@
+<!DOCTYPE web-app [
+        <!ELEMENT web-app (display-name|servlet|servlet-mapping|welcome-file-list)*>
+        <!ATTLIST web-app
+                xmlns CDATA #REQUIRED
+                xmlns:xsi CDATA #REQUIRED
+                xsi:schemaLocation CDATA #REQUIRED
+                version CDATA #REQUIRED>
+        <!ELEMENT display-name (#PCDATA)>
+        <!ELEMENT servlet (servlet-name|servlet-class|load-on-startup)*>
+        <!ELEMENT servlet-name (#PCDATA)>
+        <!ELEMENT servlet-class (#PCDATA)>
+        <!ELEMENT load-on-startup (#PCDATA)>
+        <!ELEMENT servlet-mapping (servlet-name|url-pattern)*>
+        <!ELEMENT url-pattern (#PCDATA)>
+        <!ELEMENT welcome-file-list (welcome-file)*>
+        <!ELEMENT welcome-file (#PCDATA)>
+        ]>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+         http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+  <display-name>spring-jdbc-caching</display-name>
+
+  <!-- Spring DispatcherServlet Configuration -->
+  <servlet>
+    <servlet-name>dispatcher</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>dispatcher</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <!-- Optional: Welcome file -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
