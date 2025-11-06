@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_3"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/shooter"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/shootername"
+            android:fontFamily="@font/fontq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shooter Name"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/shooternumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shooter Number"
+            android:fontFamily="@font/font1"
+            android:textSize="20sp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
