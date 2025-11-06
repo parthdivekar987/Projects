@@ -1,45 +1,58 @@
-# 🎨 Smart Home Control - UI/UX Design Project
+# 📊 React User Dashboard
 
-This repository contains the complete UI/UX design for a modern, intuitive Smart Home Control application. The project focuses on creating a clean, user-friendly interface that allows users to seamlessly manage all their smart devices (lights, thermostats, security, etc.) from a single dashboard.
+A responsive frontend dashboard application built with React.js. This project is designed to visualize key metrics and manage application data, likely serving as an admin panel or a user-facing dashboard for a larger application.
 
-The entire project was designed and prototyped in **Figma**.
-
----
-
-## 🔗 Live Interactive Prototype
-
-You can view and interact with the high-fidelity prototype, which is hosted directly from Figma.
-
-Project URL:https://stop-bundle-67830792.figma.site/
+**🔗 Live URL : https://userdashboardreact.netlify.app/
 
 ---
 
-## 💡 Key Design Features
+## ✨ Key Features
 
-* **🏠 Home Dashboard:** A central hub showing a high-level summary of all connected devices, active scenes, and room statuses.
-* **🛋️ Room-Specific Controls:** Dedicated screens for managing devices in specific rooms (e.g., Living Room, Bedroom, Kitchen).
-* **🎛️ Device Toggles:** Easy-to-use on/off switches, sliders for brightness/temperature, and clear status indicators.
-* **🎬 Scene & Automation:** UI for creating, editing, and activating pre-set "scenes" (e.g., "Movie Night," "Good Morning," "Away").
-* **📱 Responsive Design:** The layout is designed to be responsive, focusing on a mobile-first approach for on-the-go control.
-* **🎨 Clean & Modern UI:** A minimalist design focused on clarity, accessibility, and ease of use.
+* **Interactive Data Visualization:** Uses the **Recharts** library to display dynamic and responsive charts (e.g., line charts, bar charts, pie charts) for visualizing user data, sales, or other metrics.
+* **Responsive Design:** The layout is fully responsive, ensuring a seamless experience on both desktop and mobile devices.
+* **Component-Based:** Built with reusable React components for easy maintenance, scalability, and testing.
+* **State Management:** Utilizes a state management solution (like **Redux** or **React Context API**) to manage complex application state, such as user authentication and fetched dashboard data.
+* **API Integration:** Fetches data from a backend API (e.g., a Spring Boot application) using `axios` to populate the dashboard with live data.
 
 ---
 
-## 🛠️ Design Tools & Methodologies
+## 🛠️ Technology Stack
 
-This project was built entirely using **Figma** and its powerful features. The "technology stack" for this design project includes:
+This project leverages a modern frontend technology stack:
 
-* **Figma (Primary Tool):**
-    Used for all stages of the design process, from initial wireframing to the final high-fidelity mockups.
+* **Core Framework:** [**React.js**](https://react.dev/)
+* **Build Tool:** [**Vite**](https://vitejs.dev/) (Provides a fast development server and optimized builds)
+* **Data Visualization:** [**Recharts**](https://recharts.org/) (A composable charting library for React)
+* **State Management:** [**Redux**](https://redux.js.org/) (For predictable global state management)
+* **API Communication:** [**Axios**](https://axios-http.com/) (A promise-based HTTP client for making API requests)
+* **Routing:** [**React Router**](https://reactrouter.com/) (For client-side navigation)
+* **Deployment:** [**Netlify**](https://www.netlify.com/) (For continuous integration and hosting)
 
-* **Component-Based Design:**
-    The design system was built using a robust library of reusable components (buttons, cards, icons, sliders) with variants. This ensures consistency across all screens and makes the design scalable.
+---
 
-* **Auto-Layout & Constraints:**
-    Used extensively to create responsive and dynamic components that adapt to different content and screen sizes.
+## 🚀 How to Run Locally
 
-* **Interactive Prototyping:**
-    The live demo was created using Figma's built-in prototyping tools to simulate user flow, screen transitions, and micro-interactions.
+To get a local copy up and running, follow these simple steps.
 
-* **UI/UX Design Principles:**
-    The design is grounded in core UX principles (like user control, feedback, and consistency) to ensure a low learning curve and a positive user experience.
+### Prerequisites
+
+* [Node.js](https://nodejs.org/en) (which includes `npm`)
+
+### Installation & Startup
+
+1.  **Clone the repository** (or navigate into the project directory if you already have it):
+    ```bash
+    cd user-dashboard
+    ```
+
+2.  **Install NPM packages:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  Open [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal) to view it in your browser.
